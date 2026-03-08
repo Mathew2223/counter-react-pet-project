@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import Header from './ui/Header';
 import Footer from './ui/Footer';
 import Counter from './components/Counter';
@@ -12,7 +12,7 @@ export default function App() {
       <div className="flex-grow">
         <Counter />
       </div>
-
+      
       <Footer />
   </div>
   )

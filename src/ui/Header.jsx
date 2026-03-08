@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react"
 import logo from "../assets/kofta.jpg"
 import Modal from "../components/Modals";
