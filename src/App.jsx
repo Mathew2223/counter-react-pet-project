@@ -6,9 +6,13 @@ import './App.css'
 
 export default function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-950 transition-colors duration-300">
       <Header />
-      <Counter />
+
+      <div className="flex-grow">
+        <Counter />
+      </div>
+
       <Footer />
   </div>
   )

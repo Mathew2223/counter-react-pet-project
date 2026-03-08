@@ -20,23 +20,27 @@ export default function Counter() {
     }, [count, shownMessages]);
 
     const onDecrement = () => {
-        return count > 0 && setCount((value) => --value)
+        return count > 0 && setCount((value) => --value);
     }
 
     const onIncrement = () => {
-        count <= 99 && setCount((value) => ++value)
+        count <= 99 && setCount((value) => ++value);
     }
 
     const onReset = () => {
-        setCount((value) => value = 0 )
+        setCount(0)
     }
 
     return (            
         <main className="flex flex-col p-4 xl:px-0  overflow-auto">
             <div className="max-w-6xl w-full mx-auto flex-grow">
-                <div className="bg-card text-card-foreground flex flex-col gap-6 border max-w-sm w-full mx-auto p-4 rounded shadow-md">
+            <div 
+                className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white flex flex-col
+                gap-6 border border-gray-200 dark:border-gray-700 max-w-sm w-full mx-auto p-6 rounded-xl
+                shadow-lg transition-colors duration-300">
                     <div 
-                        className="text-6xl md:text-8xl font-bold text-center mb-4"
+                        className="text-6xl md:text-8xl font-bold text-center mb-4 text-gray-900
+                        dark:text-white transition-colors duration-300"
                         aria-live="polite"
                         aria-label="The current value of the counter"
                     >
